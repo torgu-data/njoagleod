@@ -22,7 +22,7 @@ library(stringr)
 
 This workbook builds the three tables in this package from the NJ OAG Law Enforcement
 Diversity data, and checks them as it goes. The agencies come from the
-[njlea](https://github.com/tor-gu/njlea) registry of NJ law enforcement agencies.
+[njlea](https://github.com/torgu-data/njlea) registry of NJ law enforcement agencies.
 It is also the package's build script: every code chunk here runs when the data is rebuilt.
 
 # Read the raw data
@@ -63,7 +63,7 @@ to_logical <- function(x, true, false, na_values = c(NA, "Not Provided", "Blank"
 # Agencies
 The source identifies an agency only by its county and name, and these may change from
 release to release. So the tables here identify agencies by a stable `agency_id` from the
-[njlea](https://github.com/tor-gu/njlea) package, which keeps the agency names, levels and
+[njlea](https://github.com/torgu-data/njlea) package, which keeps the agency names, levels and
 functions, municipalities served, and every spelling of each agency in each source. The
 registry and its consistency checks live in njlea.
 

@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/tor-gu/njoagleod/workflows/R-CMD-check/badge.svg)](https://github.com/tor-gu/njoagleod/actions)
+[![R-CMD-check](https://github.com/torgu-data/njoagleod/workflows/R-CMD-check/badge.svg)](https://github.com/torgu-data/njoagleod/actions)
 <!-- badges: end -->
 
 This is a cleaned-up version of the NJ OAG Law Enforcement Officer
@@ -26,7 +26,7 @@ contains three tables.
   gender, applicant type and outcome.
 
 The tables identify agencies by `agency_id`, a stable identifier from
-the [`njlea`](https://github.com/tor-gu/njlea) registry of NJ law
+the [`njlea`](https://github.com/torgu-data/njlea) registry of NJ law
 enforcement agencies. This package re-exports njlea’s functions for
 looking agencies up:
 
@@ -34,7 +34,7 @@ looking agencies up:
   that year, county, level and function.
 - `get_agency_municipalities(year)` The municipalities each agency
   serves, identified as in the
-  [`njmunicipalities`](https://github.com/tor-gu/njmunicipalities)
+  [`njmunicipalities`](https://github.com/torgu-data/njmunicipalities)
   package.
 - `find_agency(pattern)` Search agency names and every source spelling.
 
@@ -43,7 +43,7 @@ have the full registry.
 
 The same data is also available as a web API, at
 [`api.tor-gu.com/nj/officer_diversity`](https://tor-gu.com/apis/njoagleod.html)
-([source](https://github.com/tor-gu/njoagleod-api)).
+([source](https://github.com/torgu-data/njoagleod-api)).
 
 ## Examples
 
@@ -199,7 +199,7 @@ get_agencies(2025) |>
 
 ### Use with `njoaguof`
 
-The [`njoaguof`](https://github.com/tor-gu/njoaguof) use-of-force
+The [`njoaguof`](https://github.com/torgu-data/njoaguof) use-of-force
 package uses the same `agency_id`, so use-of-force incidents can be set
 against what this package knows about each agency: its officers and its
 hiring practices. Here we count 2024 incidents per agency.
@@ -299,7 +299,7 @@ These are the ways in which this package differs from the source data.
 
 The source identifies agencies by county and name only. The `agency_id`,
 the agency names, levels and functions, and the municipalities served
-all come from [`njlea`](https://github.com/tor-gu/njlea), not from the
+all come from [`njlea`](https://github.com/torgu-data/njlea), not from the
 source. njlea uses its own canonical names (such as “Absecon Police
 Department” for the source’s “Absecon City PD”), records every source
 spelling in `njlea::agency_alias` (source `"njoag-leod-2025"`), and
@@ -375,5 +375,5 @@ You can install the latest version of njoagleod from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("tor-gu/njoagleod")
+devtools::install_github("torgu-data/njoagleod")
 ```

@@ -5,7 +5,7 @@ new structure.
 * New source data: the 2025 NJ OAG release, covering officers for 2021-2025 and agencies and
   applicants for 2022-2025. The 2021 release is no longer used.
 * Agencies are identified by a stable `agency_id` from the
-  [njlea](https://github.com/tor-gu/njlea) registry of NJ law enforcement agencies, such as
+  [njlea](https://github.com/torgu-data/njlea) registry of NJ law enforcement agencies, such as
   `"NJLEA0001"`. The tables refer to agencies by `agency_id` only.
 * Removed the `agency` table. Agency names, levels and functions, municipalities served and
   source spellings come from njlea. This package re-exports `get_agencies()`,

@@ -14,7 +14,7 @@ LazyData: true
 Imports: 
     njlea (>= 0.1.0)
 Remotes: 
-    tor-gu/njlea
+    torgu-data/njlea
 Suggests: 
     devtools,
     dplyr (>= 1.1.0),

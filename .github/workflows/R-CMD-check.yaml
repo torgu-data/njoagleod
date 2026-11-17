@@ -48,7 +48,7 @@ jobs:
           install.packages(c('remotes', 'rcmdcheck'))
           # njlea (Imports) comes from GitHub through DESCRIPTION's Remotes: field.
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_github(c("tor-gu/njoaguof", "tor-gu/njmunicipalities"))
+          remotes::install_github(c("torgu-data/njoaguof", "torgu-data/njmunicipalities"))
         shell: Rscript {0}
 
       - uses: r-lib/actions/check-r-package@v2
